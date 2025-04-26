@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="A simple HTML document structure">
+    <meta name="author" content="Babatunde Abubakar">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Registration Page</title>
+</head>
+<body>
+    <header id="header">
+        <h1>Rayyan University Library</h1>
+    </header>
+    <main>
+        <section id="registration-section-container">
+            <h2 aria-label="header">Welcome to the Library</h2>
+            <p>Please fill out the form below to register.</p>
+            <form id="registration-form" aria-label="Registration Form">
+                <fieldset>
+                    <legend>Register for the Library</legend>
+                    <div class="form-group">
+                        <label for="username">Student Name:</label>
+                        <input type="text" id="username" required aria-label="Enter your name" aria-describedby="username-help">
+                        <small id="username-help" class="help-text">Enter your full name.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="student-id">Student ID:</label>
+                        <input type="text" id="student-id" required>   
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" required aria-label="Enter your email">  
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" required aria-label="Enter your password"> 
+                    </div>
+                   
+                    <div class="form-group">
+                        <label for="confirm-password">Confirm Password:</label>
+                        <input type="password" id="confirm-password" required aria-label="Confirm your password"> 
+                    </div>
+                    <div class="form-group">
+                        <label for="terms">I agree to the terms and conditions:</label>
+                        <input type="checkbox" id="terms" required aria-label="Agree to terms"> 
+                    </div>
+                    <div class="form-group">
+                        <label for="newsletter">Subscribe to newsletter:</label>
+                        <input type="checkbox" id="newsletter" aria-label="Subscribe to newsletter"> 
+                    </div>
+                    <button type="submit" aria-label="Submit the registration form">Register</button>
+                </fieldset>
+            </form>
+            <p id="success-message" aria-live="polite" style="display:none;">Registration successful!</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Registration Page. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
